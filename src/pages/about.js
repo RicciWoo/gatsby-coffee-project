@@ -1,16 +1,16 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import Home from '../components/Home/Home';
+import About from '../components/About/About';
 
-const HomePage = ({ data }) => {
+const AboutPage = ({ data }) => {
   const { fluid } = data.image.childImageSharp;
-  return <Home fluid={fluid} />;
+  return <About fluid={fluid} />;
 };
 
 export const query = graphql`
   query {
-    image: file(relativePath: { eq: "defaultBackground.jpeg" }) {
+    image: file(relativePath: { eq: "aboutBackground.jpeg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_withWebp
@@ -20,4 +20,4 @@ export const query = graphql`
   }
 `;
 
-export default HomePage;
+export default AboutPage;

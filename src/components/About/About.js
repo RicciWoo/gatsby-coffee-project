@@ -5,18 +5,14 @@ import SEO from '../SEO/SEO';
 import Background from '../Background/Background';
 import Info from '../Info/Info';
 
-const Home = ({ fluid }) => {
+const About = ({ fluid }) => {
   return (
     <Layout>
-      <SEO title="Home" />
-      <Background
-        fluid={fluid}
-        title="Regular Ricky's"
-        styleClass="defaultBackground"
-      />
+      <SEO title="About" />
+      <Background fluid={fluid} title="About Us" styleClass="aboutBackground" />
       <Info />
     </Layout>
   );
 };
 
-export default Home;
+export default About;
