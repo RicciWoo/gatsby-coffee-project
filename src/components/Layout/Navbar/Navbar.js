@@ -48,7 +48,7 @@ class Navbar extends Component {
               );
             })}
             <li className="nav-item ml-sm-5">
-              <FaCartArrowDown className="cartIcon" />
+              <FaCartArrowDown className="cartIcon snipcart-checkout" />
             </li>
           </ul>
         </div>
