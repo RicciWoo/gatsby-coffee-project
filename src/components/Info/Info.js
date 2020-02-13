@@ -3,7 +3,10 @@ import { Link } from 'gatsby';
 
 import Title from '../Title/Title';
 
-const Info = () => {
+const Info = ({ about }) => {
+  const path = about ? '/about' : '/';
+  const text = about ? 'About Page' : 'Home Page';
+
   return (
     <section className="py-5">
       <div className="container">
@@ -18,10 +21,8 @@ const Info = () => {
               laborum consequatur excepturi velit assumenda! Cupiditate ipsam
               numquam ab minus distinctio qui nulla quidem cum itaque omnis.
             </p>
-            <Link to="/about">
-              <button className="btn text-uppercase btnYellow">
-                About Page
-              </button>
+            <Link to={path}>
+              <button className="btn text-uppercase btnYellow">{text}</button>
             </Link>
           </div>
         </div>
