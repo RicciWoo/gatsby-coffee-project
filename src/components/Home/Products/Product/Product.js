@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'gatsby-image';
 
 const Product = ({ product }) => {
-  console.log(product);
   if (product) {
     return (
       <div className="col-10 col-sm-8 col-md-6 col-lg-4 mx-auto my-3">
